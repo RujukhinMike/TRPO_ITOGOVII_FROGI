@@ -1,4 +1,4 @@
-module fortests
+module TRPO_ITOGOVII_FROGI
 
 go 1.21.10
 
