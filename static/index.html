@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Жабьи хроники</title>
+	<style>
+        body {
+            color: #2a7f2f;
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #1a5e1f;
+        }
+        input, button {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #2a7f2f;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+	<script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🐸 Добро пожаловать в мир жаб! 🐸</h1>
+        <p>Здесь вы найдёте информацию о самых интересных представителях жабьего царства.</p>
+    </header>
+
+	<section>
+	<input type="text" id="inputName" placeholder="Имя" required />
+        <input type="text" id="inputSpecies" placeholder="Вид" required />
+        <input type="text" id="inputHabitat" placeholder="Ареал обитания" required />
+        <input type="text" id="inputAge" placeholder="Возраст" required />
+        <button onclick="loadFrogs()">Получить</button>
+        <button onclick="createMessage()">Добавить</button>
+        <button onclick="delMessage()">Удалить</button>
+	</section>
+
+    <section>
+        <h2>📜 Таблица жаб 📜</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+					<th>Имя</th>
+                    <th>Вид</th>
+                    <th>Ареал обитания</th>
+                    <th>Возраст</th>
+                </tr>
+            </thead>
+            <tbody id="frogsTableBody">
+            </tbody>
+        </table>
+		<div id="plain">
+		</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Жабьи хроники. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
