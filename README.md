@@ -10,7 +10,10 @@
 
 ![Screenshot 2025-05-31 124826](https://github.com/user-attachments/assets/23892320-d7d3-445a-9ce9-ada828b4ba02)
 
+Запуск образа с DockerHub:
+1. docker pull zemllid/trpo_itogovii_frogi
+2. docker run -d -p 8080:8080 zemllid/trpo_itogovii_frogi
 
-Запуск тестов.
+Запуск тестов:
 1. Запустите контейнер
 2. Напишите в консоль go test -v ./...
